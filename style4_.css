@@ -1,0 +1,93 @@
+h1 {
+    background-color: aqua;
+}
+
+body {
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/* Pantallas pequeñas (teléfonos) */
+@media (max-width: 600px) {
+ body {
+ background-color: rgb(230, 173, 199);
+ font-size: 14px;
+ }
+} 
+
+/* Pantallas medianas (tabletas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+ body {
+ background-color: lightgreen;
+ font-size: 16px;
+ }
+}
+
+/* Pantallas grandes (escritorios) */
+@media (min-width: 1025px) {
+ body {
+ background-color: lightyellow;
+ font-size: 18px;
+ }
+}
+
+button {
+ background: linear-gradient(to right, #4caf50, #8bc34a); /* Gradiente */
+ border: none;
+ border-radius: 12px; /* Bordes redondeados */
+ box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+ color: white;
+ padding: 10px 20px;
+ font-size: 16px;
+ cursor: pointer;
+ transition: transform 0.3s, box-shadow 0.3s; /* Transiciones animadas */
+}
+
+/* Efecto al pasar el cursor (hover) */
+button:hover {
+ transform: scale(1.1); /* Aumenta el tamaño */
+ box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.5); /* Sombra más intensa */
+}
+
+container {
+ display: flex; /* Activa Flexbox */
+ justify-content: space-around; /* Espacio uniforme entre elementos */
+ align-items: center; /* Centra verticalmente los elementos */
+ height: 200px;
+ background-color: lightgray;
+}
+.item {
+ background-color: #4c81af;
+ color: white;
+ padding: 20px;
+ text-align: center;
+ border-radius: 5px;
+}
+
+.grid-container {
+ display: grid; /* Activa Grid Layout */
+ grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual ancho */
+ gap: 10px; /* Espacio entre los elementos */
+ background-color: lightblue;
+ padding: 10px;
+}
+
+.grid-item {
+ background-color: #2196f3;
+ color: white;
+ padding: 20px;
+ text-align: center;
+ border-radius: 5px;
+}
+
+@font-face {
+ font-family: 'MiFuentePersonalizada'; /* Nombre de la fuente */
+ src: url('mi-fuente.woff2') format('woff2'), /* Archivo WOFF2 */
+ url('mi-fuente.woff') format('woff'); /* Archivo WOFF como respaldo */
+ font-weight: normal;
+ font-style: normal;
+}
+
+
+
