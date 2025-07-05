@@ -1,0 +1,67 @@
+<!--
+Campos obligatorios:
+Nombre (mínimo 3 caracteres).
+Correo electrónico (validar formato correcto).
+Contraseña (mínimo 8 caracteres con al menos un número y un carácter especial).
+Confirmación de contraseña (debe coincidir con la contraseña).
+Edad (debe ser mayor o igual a 18 años).
+Botones:
+Botón para enviar el formulario (deshabilitado hasta que todos los campos sean válidos).
+Botón para reiniciar el formulario.
+Validaciones dinámicas:
+
+Implementa validaciones en tiempo real para:
+Comprobar que el nombre tenga al menos 3 caracteres.
+Verificar el formato correcto del correo electrónico usando una expresión regular.
+Asegurarte de que la contraseña cumpla con los requisitos.
+Validar que la contraseña y su confirmación coincidan.
+Comprobar que la edad sea válida.
+Usa mensajes de error personalizados y visibles junto a cada campo.
+Estilo del formulario:
+
+Aplica estilos para diferenciar los campos válidos e inválidos.
+Utiliza colores y bordes para resaltar los errores o los campos correctos.
+Interacción del formulario:
+
+Si todos los campos son válidos, habilita el botón de envío.
+Al presionar el botón de envío, muestra una alerta o mensaje confirmando el éxito de la validación.
+Entrega:
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="formulario">
+        <h2>Registro de datos</h2>
+        <label for="">NOmbre:
+            <input type="text" id="nombre" >
+            <span id="errorNombre"></span>
+        </label><br>
+<label>Correo electrónico:
+        <input type="email" id="correo" required>
+        <span class="error" id="errorCorreo"></span>
+      </label>      
+
+        <div>
+            <button type="submit" id="enviar"> Enviar</button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
