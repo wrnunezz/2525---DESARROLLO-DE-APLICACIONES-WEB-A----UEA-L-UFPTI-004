@@ -1,0 +1,29 @@
+# Ignorar entorno virtual dentro de Proyecto
+Proyecto/venv/
+
+# Ignorar entornos virtuales
+venv/
+ENV/
+env/
+
+# Archivos Python compilados
+__pycache__/
+*.py[cod]
+
+# Archivos de entorno
+.env
+
+# Archivos de VSCode o PyCharm
+.vscode/
+.idea/
+
+# Archivos de despliegue
+*.log
+*.db
+*.sqlite3
+instance/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
