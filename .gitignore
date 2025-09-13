@@ -5,6 +5,8 @@ Proyecto/venv/
 venv/
 ENV/
 env/
+Proyecto/.venv/
+.venv/
 
 # Archivos Python compilados
 __pycache__/

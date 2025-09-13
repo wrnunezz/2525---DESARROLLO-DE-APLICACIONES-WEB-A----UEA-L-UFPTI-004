@@ -7,7 +7,7 @@
 <form method="get" action="{{ url_for('listar_productos') }}" class="form-inline">
   <input type="text" name="q" placeholder="Buscar por nombre" value="{{ q or '' }}">
   <button type="submit" class="btn">Buscar</button>
-  <a class="btn btn-primary" href="{{ url_for('crear_producto') }}" > Nuevo</a>
+  <a class="btn btn-primary" href="{{ url_for('crear_producto') }}" > + Nuevo</a>
 </form>
 
 {% if productos %}
